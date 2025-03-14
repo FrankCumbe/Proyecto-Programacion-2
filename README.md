@@ -24,7 +24,7 @@ Inicio de sesión → Usuario accede con credenciales y permisos.
 4)Registro de pedidos (Vendedor) → Puede ingresar nuevas órdenes de clientes.
 5)Gestión de clientes (Administrador y Vendedor) → Ambos pueden actualizar datos y hacer seguimiento a los clientes.
 6)Consulta de reportes (Solo Administrador) → Puede generar informes de ventas, clientes e inventario.
-7)Cierre de sesión → Cualquier usuario puede cerrar sesión cuando termine su actividad en el sistema.
+7)Cierre de sesión → (Administrador) puede cerrar sesión cuando termine su actividad en el sistema.
 
 ***roles de usuario y sus posibles interacciones***
 🔹 Administrador:
