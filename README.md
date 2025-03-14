@@ -27,6 +27,7 @@ Inicio de sesión → Usuario accede con credenciales y permisos.
 7)Cierre de sesión → Cualquier usuario puede cerrar sesión cuando termine su actividad en el sistema.
 
 *** roles de usuario y sus posibles interacciones***
+
 🔹 Administrador:
 - Gestiona productos, stock, pedidos y clientes.
 - Genera reportes de ventas.
