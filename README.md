@@ -11,15 +11,29 @@ Dana Valentina Bernal Leon y Frank Eduardo Cumbe Rojas
 Autenticacion y gestion de usuarios, procesamiento de pedidos y ventas, reportes y analisis de datos, interfaz de usuario, gestion de clientes y proveedores, y gestion de facturacion de pagos
 
 ***Tecnologia:***
-Lenguaje de programacion:(javaScript) par el desalloyo de la aplicacion.
+Lenguaje de programacion:(javaScript) con Node.js para el (backend) del desarrolo del proyecto.
 Control de Version: GitHub.
+
+***Base De Datos**
+Usaremos el Node.js con Express.js y MySQL
 
  ***Flujo de Sistema:***
 Inicio de sesión → Usuario accede con credenciales y permisos.
-Registro de productos → Se agregan nuevos productos al inventario.
-Actualización de stock → Se ajustan existencias por ventas o reposición.
-Registro de pedidos → Se ingresan nuevas órdenes de clientes.
-Procesamiento de pagos → Se registran pagos y generan facturas.
-Consulta de reportes → Se generan informes de ventas, clientes e inventario.
-Gestión de clientes → Se actualizan datos y seguimiento de clientes.
-Cierre de sesión → Usuario finaliza sesión en el sistema.
+2)Registro de productos (Solo Administrador) → Puede agregar nuevos productos al inventario.
+3)Actualización de stock (Solo Administrador) → Ajusta existencias cuando hay ventas o reposición de productos.
+4)Registro de pedidos (Vendedor) → Puede ingresar nuevas órdenes de clientes.
+5)Gestión de clientes (Administrador y Vendedor) → Ambos pueden actualizar datos y hacer seguimiento a los clientes.
+6)Consulta de reportes (Solo Administrador) → Puede generar informes de ventas, clientes e inventario.
+7)Cierre de sesión → Cualquier usuario puede cerrar sesión cuando termine su actividad en el sistema.
+
+*** roles de usuario y sus posibles interacciones***
+🔹 Administrador:
+- Gestiona productos, stock, pedidos y clientes.
+- Genera reportes de ventas.
+🔹 Vendedor:
+- Registra pedidos de clientes.
+- Gestiona información de clientes.
+- No puede modificar el inventario ni acceder a reportes.
+🔹 Cliente (opcional):
+- Puede ver su historial de compras.
+- No tiene acceso a la gestión del sistema.
