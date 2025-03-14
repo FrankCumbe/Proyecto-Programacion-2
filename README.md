@@ -14,7 +14,7 @@ Autenticacion y gestion de usuarios, procesamiento de pedidos y ventas, reportes
 Lenguaje de programacion:(javaScript) con Node.js para el (backend) del desarrolo del proyecto.
 Control de Version: GitHub.
 
-***Base De Datos**
+***Base De Datos***
 Usaremos el Node.js con Express.js y MySQL
 
  ***Flujo de Sistema:***
@@ -26,8 +26,7 @@ Inicio de sesión → Usuario accede con credenciales y permisos.
 6)Consulta de reportes (Solo Administrador) → Puede generar informes de ventas, clientes e inventario.
 7)Cierre de sesión → Cualquier usuario puede cerrar sesión cuando termine su actividad en el sistema.
 
-*** roles de usuario y sus posibles interacciones***
-
+***roles de usuario y sus posibles interacciones***
 🔹 Administrador:
 - Gestiona productos, stock, pedidos y clientes.
 - Genera reportes de ventas.
