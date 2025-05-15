@@ -3,17 +3,6 @@ import Role from '../models/Role.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
-export const register = async (req, res) => {
-  const { name, username, email, password, role_id } = req.body;
-  const hashed = await bcrypt.hash(password, 10);
-  try {
-    await User.create({ name, username, email, password: hashed, role_id });
-    res.status(201).json({ message: 'Usuario creado' });
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-};
-
 export const login = async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ where: { email }, include: Role });
