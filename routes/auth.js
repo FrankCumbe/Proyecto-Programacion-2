@@ -17,6 +17,9 @@ const router = express.Router();
  *           schema:
  *             type: object
  *             properties:
+ *               name:
+ *                 type: string
+ *                 example: "Juan Perez"
  *               username:
  *                 type: string
  *                 example: "juanperez"
@@ -26,6 +29,9 @@ const router = express.Router();
  *               password:
  *                 type: string
  *                 example: "password123"
+ *               role_id:
+ *                 type: int
+ *                 example: 1
  *     responses:
  *       201:
  *         description: "User created successfully"
