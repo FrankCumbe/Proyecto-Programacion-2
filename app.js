@@ -6,6 +6,7 @@ import authRoutes from './routes/auth.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import customerRoutes from './routes/customerRoutes.js';
 import supplierRoutes from './routes/supplierRoutes.js';
+import productRoutes from './routes/productRoutes.js';
 import { swaggerDocs, swaggerUiSetup } from './docs/swagger.js';
 
 dotenv.config();
@@ -19,6 +20,7 @@ app.use('/docs', swaggerDocs, swaggerUiSetup);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/customers', customerRoutes);
 app.use('/api/suppliers', supplierRoutes);
+app.use('/api/products', productRoutes);
 
 sequelize.sync().then(() => {
   app.listen(process.env.PORT, () => {
