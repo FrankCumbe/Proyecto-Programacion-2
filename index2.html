@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Cosméticos</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <!-- Botón de salir -->
+    <div class="logout-container">
+        <button class="logout-btn" onclick="window.location.href='file:///C:/Users/Usuario/Pictures/UNI/PROGRAMACION%20II/Proyecto%20final/INTERFAZ/index.html'">Salir</button>
+    </div>
+
+    <div class="sidebar">
+        <button class="menu-item" data-target="panel1">Item 1</button>
+        <div class="submenu" id="submenu1">
+            <button>Subopción 1</button>
+            <button>Subopción 2</button>
+        </div>
+        <button class="menu-item" data-target="panel2">Item 2</button>
+        <div class="submenu" id="submenu2">
+            <button>Subopción 3</button>
+            <button>Subopción 4</button>
+        </div>
+        <button class="menu-item" data-target="panel3">Item 3</button>
+        <div class="submenu" id="submenu3">
+            <button>Subopción 5</button>
+            <button>Subopción 6</button>
+        </div>
+        <button class="menu-item" data-target="panel4">Item 4</button>
+        <div class="submenu" id="submenu4">
+            <button>Subopción 7</button>
+            <button>Subopción 8</button>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <input type="text" placeholder="Buscar" class="search-bar">
+
+        <div class="top-cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+
+        <div class="chart large-chart"></div>
+
+        <div class="categorias">
+            <span>Categoría</span>
+            <div class="icon-grid">
+                <div class="icon-box">Icon Name</div>
+                <div class="icon-box">Icon Name</div>
+                <div class="icon-box">Icon Name</div>
+                <div class="icon-box">Icon Name</div>
+                <div class="icon-box">Icon Name</div>
+                <div class="icon-box">Icon Name</div>
+            </div>
+        </div>
+
+        <div class="stock">
+            <div class="stock-card">Numero en stock</div>
+            <div class="stock-card">Numero en stock</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f5fa;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 180px;
+    background-color: #a17ab5;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.menu-item {
+    width: 100%;
+    background-color: #d081d8;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.submenu {
+    display: none;
+    margin-left: 10px;
+}
+
+.submenu button {
+    background: #e5c5ec;
+    border: none;
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #333;
+}
+
+.main-panel {
+    margin-left: 180px;
+    padding: 20px;
+    background-color: #e7dbf0;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4eaf9;
+}
+
+.top-cards {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #c9b8dd;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.chart {
+    height: 220px;
+    background: linear-gradient(to top right, #d081d8, #a17ab5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.categorias {
+    background-color: #d9c4e7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icon-box {
+    background-color: #f4eaf9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #444;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.stock {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stock-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.logout-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.logout-btn {
+    background-color: #a17ab5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background-color: #d081d8;
+}
+
+.large-chart {
+    height: 300px; /* Para hacerla más grande */
+}
